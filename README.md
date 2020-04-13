@@ -2,13 +2,11 @@
 
 Corona Watch is unofficial application to provide live world wide and indian corona statistics
 
-# Features
+### Features
 
-Live data from 200+ countries
-
-Live data on india statewise
-
-Realtime graphics to of Covid19
+* Live data from 200+ countries
+* Live data on india statewise
+* Realtime graphics to of Covid19
 
 ![](images/poster.png)
 
@@ -24,6 +22,10 @@ Room database used in this application
 ### Screenshots
 <img src="images/1.png" width="150"> <img src="images/2.png" width="150"> <img src="images/3.png" width="150"> <img src="images/4.png" width="150">
 
+### Library Used
+
+* [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
+
 ## Authors
 
 * **Altaf Chaduahri** - *Initial work* - [Altaf Chadhari](https://github.com/altafc22)
@@ -31,9 +33,3 @@ Room database used in this application
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-@## Acknowledgments
-
-@* Hat tip to anyone whose code was used
-* Inspiration 
-* etc
