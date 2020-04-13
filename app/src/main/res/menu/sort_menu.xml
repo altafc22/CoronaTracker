@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_confirmed"
+        android:icon="@drawable/ic_sort_confirmed"
+        android:title="Favorite" />
+
+    <item
+        android:id="@+id/sort_deaths"
+        android:icon="@drawable/ic_sort_rose"
+        android:title="Message" />
+
+    <item
+        android:id="@+id/sort_az"
+        android:icon="@drawable/ic_sort_a_to_z"
+        android:title="Download" />
+
+
+    <item
+        android:id="@+id/sort_za"
+        android:icon="@drawable/ic_sort_z_to_a"
+        android:title="Share" />
+</menu>

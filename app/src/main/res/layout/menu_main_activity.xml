@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.ibrahimsn.particle.ParticleView
+        android:id="@+id/particleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="@android:color/white"
+        app:maxParticleRadius="12"
+        app:minParticleRadius="5"
+        app:particleColor="@color/trans_red"
+        app:particleCount="20" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/iv_avatar"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_logo"/>
+
+            </RelativeLayout>
+
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tony Stark"
+                android:id="@+id/tv_avatar_name"
+                android:textSize="20sp"
+                android:fontFamily="@font/proxima_nova_soft_bold"
+                android:textColor="@color/blackTextColor"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stark@mail.com"
+                android:id="@+id/tv_avatar_email_id"
+                android:textSize="17sp"
+                android:textColor="@color/blackTextColor"
+                android:fontFamily="@font/proxima_nova_soft_regular"/>-->
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/top_bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="openAboutInfo"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:id="@+id/btn_orders"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:tint="@color/dark_blue"
+                    android:src="@drawable/ic_virus_color"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="@font/helvetica"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_gravity="start|center_vertical"
+                android:text="Developed by"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:src="@drawable/pp"
+                    app:civ_border_width="5dp"
+                    app:civ_border_color="#eb5569"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Altaf Razzaque"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/dark_blue"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Softwate Developer\nUI/UX Designer"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/toolbar_color"
+                    android:layout_marginTop="0dp"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Corona Counter is unofficial application to provide live world wide and indian corona statistics"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/toolbar_color"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Source of information:"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/dark_blue"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. https://api.covid19api.com/ (World Wide stats)\n2. https://api.covid19india.org (India stats)"
+                    android:fontFamily="@font/nexa_regular"
+                    android:textColor="@color/toolbar_color"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_regular"
+                    android:textColor="@color/toolbar_color"
+                    android:text="      We are using state bulletins and official handles to update our numbers. for exact numbers, you should have to rely on a government sources."
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Design  Inspiration:"
+                    android:visibility="gone"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/dark_blue"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="https://github.com/sidhuparas/Coronavirus-Tracker"
+                    android:fontFamily="@font/nexa_regular"
+                    android:textColor="@color/toolbar_color"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Report suggestions, issues, bugs:"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/dark_blue"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You can give your feedback or report your suggestions, issues, and bugs on our official telegram channel or by mail."
+                    android:fontFamily="@font/nexa_regular"
+                    android:textColor="@color/toolbar_color"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_email_id"
+                    android:text="Send Us Mail"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="13sp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:id="@+id/bottom_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/app_name"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_app_version"
+            android:textSize="12sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/montserrat_regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Made with &#10084;&#65039; in India &#127470;&#127475;"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_text"
+            android:textSize="12sp"
+            android:layout_margin="2dp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/montserrat_regular"/>
+    </LinearLayout>
+
+</RelativeLayout>

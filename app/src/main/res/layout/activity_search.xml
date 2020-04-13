@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search_activity_layout"
+    tools:context=".activities.SearchCountryActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        app:elevation="0dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/white"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/iv_btn_back"
+                    style="@style/ClickableView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_back"
+                    android:visibility="visible"
+
+                    android:tint="@color/dark_blue" />
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:queryHint="search here"
+                    android:iconifiedByDefault="false"
+                    android:layout_toRightOf="@+id/iv_btn_back"
+                    android:background="@drawable/bg_outline"
+                    android:id="@+id/search_view"/>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:overScrollMode="never"
+        android:layout_below="@+id/appbar"
+        tools:listitem="@layout/item_list"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.joaquimley.faboptions.FabOptions
+        android:id="@+id/fab_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom"
+        app:button_menu="@menu/sort_menu"
+        app:fab_color="@color/yellow" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_world"
+        android:icon="@drawable/overview_selector"
+        android:title="@string/tab_1" />
+
+    <item
+        android:id="@+id/action_india"
+        android:icon="@drawable/india_selector"
+        android:title="@string/tab_2" />
+  <!--  <item
+        android:id="@+id/action_district"
+        android:icon="@drawable/district_selector"
+        android:title="@string/tab_3" /> -->
+
+    <item
+        android:id="@+id/action_graphics"
+        android:icon="@drawable/graphics_selector"
+        android:title="@string/tab_4" />
+
+</menu>

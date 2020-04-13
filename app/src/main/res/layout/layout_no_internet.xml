@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/ll_no_internet"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_virus_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whoops"
+        android:textColor="@color/dark_blue"
+        android:textSize="22sp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/montserrat_bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/slow_internet_string"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/dark_blue"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pool_down_to_refresh"
+        android:fontFamily="@font/helvetica"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_margin="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+</LinearLayout>
