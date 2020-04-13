@@ -10,6 +10,10 @@ Corona Watch is unofficial application to provide live world wide and indian cor
 
 ![](images/poster.png)
 
+### Screenshots
+<img src="images/1.png" width="200"> <img src="images/2.png" width="200"> <img src="images/3.png" width="200"> <img src="images/4.png" width="200">
+
+
 ### API Used in this project
 
 https://api.covid19india.org/ (State wide data)
@@ -18,9 +22,6 @@ https://api.covid19api.com/ (Worldwide data)
 ### Databse
 
 Room database used in this application 
-
-### Screenshots
-<img src="images/1.png" width="150"> <img src="images/2.png" width="150"> <img src="images/3.png" width="150"> <img src="images/4.png" width="150">
 
 ### Library Used
 
