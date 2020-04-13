@@ -11,7 +11,7 @@ Corona Watch is unofficial application to provide live world wide and indian cor
 ![](images/poster.png)
 
 ### Screenshots
-<img src="images/1.png" width="210"> <img src="images/2.png" width="210"> <img src="images/3.png" width="210"> <img src="images/4.png" width="210">
+<img src="images/1.png" width="210">&nbsp;&nbsp;<img src="images/2.png" width="210">&nbsp;&nbsp;<img src="images/3.png" width="210"> &nbsp;&nbsp;<img src="images/4.png" width="210">
 
 
 ### API Used in this project
