@@ -32,8 +32,8 @@ Room database used in this application
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+@## Acknowledgments
 
-* Hat tip to anyone whose code was used
+@* Hat tip to anyone whose code was used
 * Inspiration 
 * etc
