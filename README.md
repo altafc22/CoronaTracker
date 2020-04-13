@@ -2,6 +2,14 @@
 
 Corona Watch is unofficial application to provide live world wide and indian corona statistics
 
+# Features
+
+Live data from 200+ countries
+
+Live data on india statewise
+
+Realtime graphics to of Covid19
+
 ![](images/poster.png)
 
 ### API Used in this project
@@ -27,5 +35,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-* Inspiration
+* Inspiration 
 * etc
